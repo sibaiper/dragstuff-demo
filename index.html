@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>dragstuff demo</title>
+  </head>
+  <body>
+    <div class="choice">
+      <div class="choices">
+        <div class="circle"><button>Circular</button></div>
+        <div class="box"><button>Box</button></div>
+      </div>
+    </div>
+
+    <section class="demo_section">
+      <main>
+        <div class="wrapper">
+          <p>Drag and click the item in the middle for different results.</p>
+          <div class="demo">
+            <div class="circular_demo">
+              <div class="container">
+                <div class="item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="code_container">
+            <pre>
+                    <code class="language-javascript">
+                        Drag.init(".item", {
+                            bounds: {
+                              element: ".container",
+                              type: "circle",
+                            },
+                            threshold: 5,
+                            onDrag: ...
+                          });
+                    </code>
+                </pre>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script src="./dragstuff/index.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
